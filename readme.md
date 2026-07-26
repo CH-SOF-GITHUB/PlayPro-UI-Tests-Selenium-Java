@@ -465,3 +465,77 @@ public class Hooks extends LTConfigCucumber {
         }
     }
 }
+##############################################################################################################################
+##############################################################################################################################
+playwright.yml:
+#name: Playwright Tests
+#on:
+#  push:
+#    branches: [ "main" ]
+#  pull_request:
+#    branches: [ "main" ]
+#jobs:
+#  test:
+#    timeout-minutes: 60
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v4
+#      - uses: actions/setup-node@v4
+#        with:
+#          node-version: lts/*
+#      - name: Install dependencies
+#        run: npm ci
+#        working-directory: src/test/java/Playwright
+#      - name: Install Playwright Browsers
+#        run: npx playwright install --with-deps
+#        working-directory: src/test/java/Playwright
+#      - name: Run Playwright tests
+#        run: npx playwright test
+#        working-directory: src/test/java/Playwright
+#      - uses: actions/upload-artifact@v4
+#        if: ${{ !cancelled() }}
+#        with:
+#          name: playwright-report
+#          path: src/test/java/Playwright/playwright-report/
+#          retention-days: 30
+
+##############################################################################################################################
+##############################################################################################################################
+selenide-ci.yaml:
+#name: Selenide UI Tests
+#
+#on:
+#  push:
+#    branches: [ "main" ]
+#  pull_request:
+#    branches: [ "main" ]
+#
+#jobs:
+#  selenide-tests:
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - uses: actions/checkout@v4
+#
+#      - name: Set up JDK 17
+#        uses: actions/setup-java@v4
+#        with:
+#          java-version: '17'
+#          distribution: 'temurin'
+#          cache: maven
+#
+#      - name: Build project
+#        run: mvn clean compile
+#
+#      - name: Run Selenide tests
+#        run: mvn "-Dtest=Selenide.UI.PlayPro.Web.Front.**" test
+#
+#      - name: Upload Selenide Reports
+#        if: always()
+#        uses: actions/upload-artifact@v4
+#        with:
+#          name: selenide-reports
+#          path: target/selenide-ci-reports
+
+##############################################################################################################################
+##############################################################################################################################
