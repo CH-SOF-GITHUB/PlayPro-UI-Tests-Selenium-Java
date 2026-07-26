@@ -8,15 +8,11 @@ jobs:
     steps:
       # Étape 1 : Récupérer le code source
       - name: Checkout GitCode
-        uses: actions/checkout@v2
-
-      # Étape 2 : Installer les dépendances
-      - name: Install Dependencies
-        run: npm ci
+        uses: actions/checkout@v4
 
       # Étape 3 : Exécuter les tests Cypress
       - name: Run Cypress Tests
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@v6
         with:
           command: npx cypress run --spec "cypress/e2e/play/pro/v3/*.cy.js"
           browser: chrome

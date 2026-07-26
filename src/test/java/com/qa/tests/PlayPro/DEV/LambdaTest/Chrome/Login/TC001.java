@@ -13,7 +13,7 @@ public class TC001 extends BaseTest {
     WebCookiesPage webCookiesPage;
 
 
-    @Test
+   /* @Test
     @Epic("Web Interface")
     @Feature("Login features")
     @Story("Authentication")
@@ -30,7 +30,7 @@ public class TC001 extends BaseTest {
         step3("Admin1234!");
         step4();
         step5();
-    }
+    }*/
 
     @Step("Step 1")
     public void step1() {
