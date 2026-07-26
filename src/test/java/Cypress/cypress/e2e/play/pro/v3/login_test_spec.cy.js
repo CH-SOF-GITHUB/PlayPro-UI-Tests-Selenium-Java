@@ -1,7 +1,10 @@
-describe("PlayPro V3 Login ", () => {
+describe("PlayPro V3 should login successfully ", {tags: '@smoke'}, () => {
+    // TEST 1
     it("Open the URL Of Web Site", () => {
         cy.visit("https://chakerqa.playpro.fr/");
     });
+
+    // TEST 2
     it("Login into the application", () => {
         cy.visit("https://chakerqa.playpro.fr/connexion");
         cy.contains('button', 'Accepter').eq(0).click();
