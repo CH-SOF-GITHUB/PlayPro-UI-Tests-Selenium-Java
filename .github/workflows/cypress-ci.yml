@@ -23,7 +23,7 @@ jobs:
 
       # Étape 4 : Télécharger les captures d'écran en cas d'échec
       - name: Upload Cypress Screenshots
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: failure()
         with:
           name: cypress-screenshots
@@ -31,7 +31,7 @@ jobs:
 
       # Étape 5 : Télécharger les vidéos des tests
       - name: Upload Cypress Videos
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: always()
         with:
           name: cypress-videos
