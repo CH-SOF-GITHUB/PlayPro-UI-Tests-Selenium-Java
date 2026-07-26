@@ -14,6 +14,8 @@ jobs:
       - name: Run Cypress Tests
         uses: cypress-io/github-action@v6
         with:
+          # Spécifiez le chemin vers vos fichiers de test Cypress
+          working-directory: src/test/java/Cypress
           command: npx cypress run --spec "cypress/e2e/play/pro/v3/*.cy.js"
           browser: chrome
 
