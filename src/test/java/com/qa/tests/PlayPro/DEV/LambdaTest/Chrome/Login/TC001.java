@@ -55,7 +55,7 @@ public class TC001 extends BaseTest {
     @Step("Step 5: assertion for successful login")
     public void step5() throws InterruptedException {
         // wait for some time to let the page load
-        Thread.sleep(7000);
+        Thread.sleep(10000);
         // verify the login conditions
         Assert.assertEquals(driver.getCurrentUrl(), "https://demotenant.playpro.fr/");
         Assert.assertEquals(driver.getTitle(), "DEMO TENANT");
