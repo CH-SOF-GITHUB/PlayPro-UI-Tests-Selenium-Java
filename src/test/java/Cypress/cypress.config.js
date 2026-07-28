@@ -2,6 +2,7 @@ const {defineConfig} = require("cypress");
 
 
 module.exports = defineConfig({
+    video: true, // generate videos for builds
     e2e: {
         // Désactivez allowCypressEnv si nécessaire : Ajoutez cette option dans votre configuration pour éviter l'avertissement lié à Cypress.env()
         AllowCypressEnv: false,
