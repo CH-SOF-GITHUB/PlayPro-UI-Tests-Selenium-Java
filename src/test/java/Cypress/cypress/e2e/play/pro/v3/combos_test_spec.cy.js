@@ -1,4 +1,4 @@
-describe("PlayPro V3 Booking", () => {
+describe("PlayPro V3 Combos Booking", () => {
     // Add Hook Cypress
     beforeEach(() => {
         cy.visit("https://chakerqa.playpro.fr/connexion");
@@ -9,7 +9,9 @@ describe("PlayPro V3 Booking", () => {
         cy.contains('a', 'Réserver').eq(0).click();
     });
 
-    /*it('', () => {
-
-    });*/
-})
+    // TEST 1
+    it("Navigate to Combos Page by category", () => {
+        cy.get('a[href="/discover/tag/sport-collectif?id=1"]').eq(0).click();
+        cy.url().should('equal', 'https://chakerqa.playpro.fr/discover/tag/sport-collectif?id=1');
+    });
+});
