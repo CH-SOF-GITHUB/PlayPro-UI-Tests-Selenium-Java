@@ -9,6 +9,7 @@ describe("PlayPro V3 should check events", {tags: '@events'}, () => {
         cy.contains('button', 'Me connecter').click();
     });
 
+    // TEST 1
     it("Navigate to the events page and check offer page", () => {
         cy.get("button#headlessui-menu-button-\\:r0\\:").click({force: true});
         cy.get('[role="menu"]').should('be.visible');
@@ -17,6 +18,7 @@ describe("PlayPro V3 should check events", {tags: '@events'}, () => {
         cy.url().should('equal', 'https://chakerqa.playpro.fr/discover/offer');
     });
 
+    // TEST 2
     it("Navigate to the events page and check offer page", () => {
         cy.get("button#headlessui-menu-button-\\:r0\\:").click({force: true});
         cy.get('[role="menu"]').should('be.visible');
@@ -25,6 +27,7 @@ describe("PlayPro V3 should check events", {tags: '@events'}, () => {
         cy.url().should('equal', 'https://chakerqa.playpro.fr/gift');
     });
 
+    // TEST 3
     it("Navigate to the events page and check offer page", () => {
         cy.get("button#headlessui-menu-button-\\:r0\\:").click({force: true});
         cy.get('[role="menu"]').should('be.visible');
@@ -33,6 +36,7 @@ describe("PlayPro V3 should check events", {tags: '@events'}, () => {
         cy.url().should('equal', 'https://chakerqa.playpro.fr/discover/events');
     });
 
+    // TEST 4
     it("Navigate to the events page and check offer page", () => {
         cy.get("button#headlessui-menu-button-\\:r0\\:").click({force: true});
         cy.get('[role="menu"]').should('be.visible');
