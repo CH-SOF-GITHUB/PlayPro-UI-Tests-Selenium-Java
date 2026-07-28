@@ -30,9 +30,9 @@ describe("PlayPro V3 Reservations Page ", () => {
     });
 
     // TEST OK but system return Too Many Attempts 429
-    /*it("Check Title 'Nos Forfaits & Abonnements'", () => {
+    it("Check Title 'Nos Forfaits & Abonnements'", () => {
         cy.contains('p', 'Nos Forfaits & Abonnements').should('be.visible');
-    });*/
+    });
 
     // TEST OK but system return Too Many Attempts 429
     /*it("Check Title 'Envie d’une pause gourmande ?'", () => {
