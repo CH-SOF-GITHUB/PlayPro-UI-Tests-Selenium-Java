@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@cypress/grep": "^6.0.2",
+    "@cypress/xpath": "^2.0.3",
     "cypress": "^15.18.1",
     "lambdatest-cypress-cli": "^3.0.50"
   }
