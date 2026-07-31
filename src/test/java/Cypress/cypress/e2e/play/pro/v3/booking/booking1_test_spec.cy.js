@@ -33,5 +33,12 @@ describe("Booking Suite 1", () => {
         cy.xpath('(//button[contains(@class,"relative w-full h-[50px] rounded-md max-md:px-[15px] lg:text-base gap-[10px] opacity-100 font-poppins font-medium text-[15px] leading-[21px] tracking-[0px] text-center border bg-primary")])[1]').click();
         cy.wait(5000);
         cy.contains('h2', 'Pour mieux préparer votre venue').should('exist');
+        cy.wait(1000);
+        cy.contains('button', 'Finaliser').click();
+        cy.wait(5000);
+        cy.url().should('equal', 'https://chakerqa.playpro.fr/Panier');
+        cy.wait(1000);
+        cy.contains('div.relative', '****-4242').should('be.visible');
+        cy.contains('div.relative', '****-4242').click();
     });
 });

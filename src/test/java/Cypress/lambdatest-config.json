@@ -23,7 +23,8 @@
     "headless": false,
     "npm_dependencies": {
       "cypress": "15.18.1",
-      "@cypress/grep": "^6.0.2"
+      "@cypress/grep": "^6.0.2",
+      "@cypress/xpath": "^2.0.3"
     }
   },
   "tunnel_settings": {
