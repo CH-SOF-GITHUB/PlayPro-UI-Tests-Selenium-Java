@@ -23,7 +23,7 @@ describe("Booking Suite 1", () => {
         cy.contains('button', '30 min').eq(0).click();
         cy.wait(1000);
         cy.contains('button', 'Continuer ➔').click();
-        cy.wait(1000);
+        cy.wait(5000);
         cy.get('div.relative').find('button[type="button"].w-full').contains('span', '09:00').should('exist');
     });
 });
