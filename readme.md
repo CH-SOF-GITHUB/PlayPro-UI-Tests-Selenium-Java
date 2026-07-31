@@ -539,3 +539,49 @@ selenide-ci.yaml:
 
 ##############################################################################################################################
 ##############################################################################################################################
+java-ci.yaml:
+name: Java CI with Maven
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Set build name
+        run: |
+          BUILD_NAME="PR-${{ github.event.pull_request.number }}-${{ github.sha }}"
+          echo "BUILD_NAME=$BUILD_NAME" >> $GITHUB_ENV
+
+      - name: Set Repository Name
+        run: |
+          REPO_NAME="${{ github.repository }}"
+          echo "REPO_NAME=$REPO_NAME" >> $GITHUB_ENV
+
+      - name: Set github run ID
+        run: |
+          GITHUB_RUN_ID="${{ github.run_id }}"
+          echo "GITHUB_RUN_ID=$GITHUB_RUN_ID" >> $GITHUB_ENV  
+
+      - name: Clean and build project
+        run: mvn clean compile
+
+      # JAVA TESTS UNIQUEMENT
+      - name: Run Specific Suite (test cases - selenium java)
+        env:
+          CI: true
+        run: mvn test -Dheadless=true -Dtest=com.qa.tests.PlayPro.DEV.LambdaTest.Chrome.Login.TC001

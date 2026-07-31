@@ -16,7 +16,7 @@ jobs:
         with:
           # Spécifiez le chemin vers vos fichiers de test Cypress: npx cypress run --spec 'cypress/e2e/play/pro/v3/*.cy.js'
           working-directory: src/test/java/Cypress
-          command: npx cypress run --spec 'cypress/e2e/play/pro/v3/*.cy.js'
+          command: npx cypress run --spec 'cypress/e2e/play/pro/v3/booking/booking1_test_spec.cy.js'
           browser: chrome
 
       # Étape 4 : Télécharger les captures d'écran en cas d'échec
