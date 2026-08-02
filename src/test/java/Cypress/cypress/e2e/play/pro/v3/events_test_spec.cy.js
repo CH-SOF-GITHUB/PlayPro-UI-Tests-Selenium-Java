@@ -15,7 +15,7 @@ describe("PlayPro V3 should check events", {tags: '@events'}, () => {
     });
 
     // TEST 1
-    it("Navigate to the events page and check offer page", () => {
+    it("Navigate to offer page", () => {
         cy.get("button#headlessui-menu-button-\\:r0\\:").click({force: true});
         cy.get('[role="menu"]').should('be.visible');
         cy.contains('a', 'Offre découverte').should('be.visible');
@@ -26,7 +26,7 @@ describe("PlayPro V3 should check events", {tags: '@events'}, () => {
     });
 
     // TEST 2
-    it("Navigate to the events page and check offer page", () => {
+    it("Navigate to bon cadeau page", () => {
         cy.get("button#headlessui-menu-button-\\:r0\\:").click({force: true});
         cy.get('[role="menu"]').should('be.visible');
         cy.contains('a', 'Bon cadeau').should('be.visible');
@@ -37,7 +37,7 @@ describe("PlayPro V3 should check events", {tags: '@events'}, () => {
     });
 
     // TEST 3
-    it("Navigate to the events page and check offer page", () => {
+    it("Navigate to the events page", () => {
         cy.get("button#headlessui-menu-button-\\:r0\\:").click({force: true});
         cy.get('[role="menu"]').should('be.visible');
         cy.contains('a', 'Événements').should('be.visible');
@@ -48,7 +48,7 @@ describe("PlayPro V3 should check events", {tags: '@events'}, () => {
     });
 
     // TEST 4
-    it("Navigate to the events page and check offer page", () => {
+    it("Navigate to restoration page", () => {
         cy.get("button#headlessui-menu-button-\\:r0\\:").click({force: true});
         cy.get('[role="menu"]').should('be.visible');
         cy.contains('a', 'Restauration').should('be.visible');

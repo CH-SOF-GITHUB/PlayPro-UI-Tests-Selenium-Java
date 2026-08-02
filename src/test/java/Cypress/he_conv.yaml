@@ -23,7 +23,7 @@ matrix:
   browser:
     - Chrome-latest-1
   test:
-    - ./cypress/e2e/play/pro/v3/booking/booking1_test_spec.cy.js
+    - ./cypress/e2e/play/pro/v3/booking/booking2_bc_test_spec.cy.js
   os:
     - win
 testSuites:

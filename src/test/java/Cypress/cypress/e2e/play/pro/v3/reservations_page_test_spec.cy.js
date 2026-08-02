@@ -31,6 +31,7 @@ describe("PlayPro V3 Reservations Page ", () => {
     });
 
     it("Check Title 'Nos activités'", () => {
+        cy.wait(5000);
         cy.contains('p', 'Nos activités').should('be.visible');
     });
 
