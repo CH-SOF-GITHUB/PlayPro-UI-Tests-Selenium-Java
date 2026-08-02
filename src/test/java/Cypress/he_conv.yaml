@@ -33,7 +33,7 @@ cypressOps:
   Build: cypress build tests - PlayPro V3
   BuildTags: []
   Tags: []
-  Network: false
+  Network: true
   GeoLocation: ""
   ReporterConfigFile: base_reporter_config.json
   ProjectAutoCreate: true
