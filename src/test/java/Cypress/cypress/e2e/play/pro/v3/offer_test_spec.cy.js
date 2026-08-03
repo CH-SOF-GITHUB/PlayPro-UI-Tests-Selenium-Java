@@ -48,6 +48,17 @@ describe("PlayPro V3 should check events", {tags: '@events'}, () => {
     });
 
     // TEST 4
+    it("Navigate to the events page", () => {
+        cy.get("button#headlessui-menu-button-\\:r0\\:").click({force: true});
+        cy.get('[role="menu"]').should('be.visible');
+        cy.contains('a', 'Abonnements').should('be.visible');
+        cy.wait(1000);
+        cy.contains('a', 'Abonnements').click();
+        cy.wait(5000);
+        cy.url().should('equal', 'https://chakerqa.playpro.fr/discover/serie');
+    });
+
+    // TEST 5
     it("Navigate to restoration page", () => {
         cy.get("button#headlessui-menu-button-\\:r0\\:").click({force: true});
         cy.get('[role="menu"]').should('be.visible');
