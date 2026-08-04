@@ -12,7 +12,9 @@ module.exports = defineConfig({
             cypressGrepPlugin(config);
             return config;
         },
-        baseUrl: "https://chakerqa.playpro.fr",
+        chromeWebSecurity: false,
+        baseUrl: "https://chakerqa.playpro.fr/connexion",
+        pageLoadTimeout: 60000,
         specPattern: "cypress/e2e/**/*.cy.js",
         supportFile: false
     },

@@ -16,7 +16,7 @@
     "reporter_config_file": "base_reporter_config.json",
     "build_name": "cypress build tests - PlayPro V3",
     "parallels": 1,
-    "specs": "./cypress/e2e/play/pro/v3/offer_test_spec.cy.js",
+    "specs": "./cypress/e2e/play/pro/v3/booking/packages/booking1_test_spec.cy.js",
     "ignore_files": "",
     "network": true,
     "video": true,
