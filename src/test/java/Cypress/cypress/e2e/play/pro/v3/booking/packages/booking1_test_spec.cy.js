@@ -26,6 +26,7 @@ describe("PlayPro V3 should check booking packages - Suite 04", {tags: '@booking
         cy.contains('span', 'Forfait-VR-Illimité').should('be.visible');
         cy.contains('span', 'Forfait-VR-Illimité').click();
         console.log("Navigate to booking package page 'Forfait-VR-Illimité'");
+        cy.wait(3000);
         cy.url().should('equal', 'https://chakerqa.playpro.fr/discover/offer/forfaitvrillimite?id=4');
         for (let i = 0; i < 2; i++) {
             cy.wait(1000);
@@ -38,4 +39,29 @@ describe("PlayPro V3 should check booking packages - Suite 04", {tags: '@booking
         }
     });
 
+    // TEST 2
+    it("Navigate to booking package page 'Forfait-VR-Illimité' ", () => {
+        cy.contains('span', 'Forfait-VR-Illimité').click();
+        cy.wait(1000);
+        cy.url().should('equal', 'https://chakerqa.playpro.fr/discover/offer/forfaitvrillimite?id=4');
+        cy.wait(1000);
+        cy.contains('button', 'Continuer mes achats').click();
+        cy.wait(3000);
+        cy.url().should('equal', 'https://chakerqa.playpro.fr/');
+    });
+
+    // TEST 3
+    it("Navigate to booking package page 'Forfait-VR-Illimité' ", () => {
+        cy.contains('span', 'Forfait-VR-Illimité').click();
+        cy.wait(1000);
+        cy.url().should('equal', 'https://chakerqa.playpro.fr/discover/offer/forfaitvrillimite?id=4');
+        for (let i = 0; i < 1; i++) {
+            cy.wait(1000);
+            cy.xpath("(//button[contains(@class,'rounded-full cursor-pointer')])[2]").click();
+        }
+        cy.wait(1000);
+        cy.contains('button', 'Ajouter au panier').click();
+        cy.wait(3000);
+        cy.url().should('equal', 'https://chakerqa.playpro.fr/Panier');
+    });
 });
