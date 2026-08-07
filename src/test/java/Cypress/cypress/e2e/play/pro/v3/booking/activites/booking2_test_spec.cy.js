@@ -104,7 +104,9 @@ describe("Booking Suite 2", () => {
         cy.contains('button', 'Continuer ➔').click();
         cy.wait(1000);
         cy.get('div.relative').find('button[type="button"].w-full').contains('span', '09:35').click();
-        cy.wait(1000);
+        cy.wait(3000);
+        cy.xpath('(//button[contains(@class,"relative w-full h-[50px] rounded-md max-md:px-[15px] lg:text-base gap-[10px] opacity-100 font-poppins font-medium text-[15px] leading-[21px] tracking-[0px] text-center border bg-primary")])[1]').should('not.have.attr', 'disabled');
+        cy.wait(3000);
         cy.xpath('(//button[contains(@class,"relative w-full h-[50px] rounded-md max-md:px-[15px] lg:text-base gap-[10px] opacity-100 font-poppins font-medium text-[15px] leading-[21px] tracking-[0px] text-center border bg-primary")])[1]').click();
         cy.wait(1000);
         cy.contains('button', 'Finaliser').click();
