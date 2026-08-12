@@ -37,7 +37,7 @@ describe("PlayPro V3 should check events", {tags: '@events'}, () => {
     });
 
     // TEST 3
-    it("Navigate to the events page", () => {
+    it("Navigate to the Evenements page", () => {
         cy.get("button#headlessui-menu-button-\\:r0\\:").click({force: true});
         cy.get('[role="menu"]').should('be.visible');
         cy.contains('a', 'Événements').should('be.visible');
@@ -48,7 +48,7 @@ describe("PlayPro V3 should check events", {tags: '@events'}, () => {
     });
 
     // TEST 4
-    it("Navigate to the events page", () => {
+    it("Navigate to the Abonnements page", () => {
         cy.get("button#headlessui-menu-button-\\:r0\\:").click({force: true});
         cy.get('[role="menu"]').should('be.visible');
         cy.contains('a', 'Abonnements').should('be.visible');
