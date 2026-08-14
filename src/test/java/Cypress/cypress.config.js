@@ -18,7 +18,7 @@ module.exports = defineConfig({
             return config;
         },
         chromeWebSecurity: false,
-        baseUrl: "https://chakerqa.playpro.fr/connexion",
+        baseUrl: "https://chakerqa.playpro.fr/",
         pageLoadTimeout: 60000,
         specPattern: "cypress/e2e/**/*.cy.js",
         supportFile: false
