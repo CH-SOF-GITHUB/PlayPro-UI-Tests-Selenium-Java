@@ -49,7 +49,8 @@ cypress-test-job:
   script:
     - echo "Début du test Cypress"
     # Exécution ciblée du test
-    - npx cypress run --spec "src/test/java/Cypress/cypress/e2e/play/pro/v3/booking/undatedTickets/booking1_test_spec.cy.js"
+    - cd src/test/java/Cypress
+    - npx cypress run --spec "cypress/e2e/play/pro/v3/booking/undatedTickets/booking1_test_spec.cy.js"
 
   artifacts:
     when: always
