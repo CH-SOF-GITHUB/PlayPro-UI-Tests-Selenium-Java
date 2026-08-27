@@ -18,7 +18,7 @@ describe("POS - Verify That Admin should close session of another user Manager f
             },
             body: {
                 "action": "close",
-                "cash_amount": 50.5,
+                "cash_amount": 50,
                 "note": "Session of manager deleted successfully",
                 "banking": 0
             },
