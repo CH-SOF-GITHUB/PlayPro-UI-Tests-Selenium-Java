@@ -24,6 +24,22 @@ describe("POS - Verify That Admin should close session of another user Manager f
             },
             failOnStatusCode: false
         }).then((response) => {
+            // =========================
+            // DEBUG RESPONSE
+            // =========================
+            console.log("========== API RESPONSE ==========");
+            console.log("STATUS:", response.status);
+            console.log("BODY:", response.body);
+            console.log("HEADERS:", response.headers);
+
+            cy.log(`HTTP Status: ${response.status}`);
+            cy.log(`Response Body: ${JSON.stringify(response.body)}`);
+
+            // Vérification que les variables CI/CD existent
+            cy.log(`POS_DEVICE_ID defined: ${!!Cypress.env("POS_DEVICE_ID")}`);
+            cy.log(`POS_SESSION_UUID defined: ${!!Cypress.env("POS_SESSION_UUID")}`);
+            cy.log(`POS_AUTH_TOKEN defined: ${!!Cypress.env("POS_AUTH_TOKEN")}`);
+
             // HTTP
             expect(response.status).to.eq(200);
             // Business response
