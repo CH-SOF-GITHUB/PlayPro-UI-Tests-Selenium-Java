@@ -16,6 +16,7 @@
       <w>bénéficier</w>
       <w>chevauchement</w>
       <w>cible</w>
+      <w>ciblée</w>
       <w>complet</w>
       <w>connecte</w>
       <w>coordonnées</w>
@@ -48,6 +49,7 @@
       <w>evenements</w>
       <w>explicitement</w>
       <w>externe</w>
+      <w>fermée</w>
       <w>fluide</w>
       <w>forcez</w>
       <w>fréquentes</w>
@@ -57,6 +59,7 @@
       <w>immersives</w>
       <w>interne</w>
       <w>intégré</w>
+      <w>jamais</w>
       <w>jsalerts</w>
       <w>jusqu</w>
       <w>l'avertissement</w>
@@ -71,12 +74,16 @@
       <w>maintenant</w>
       <w>masquage</w>
       <w>mesure</w>
+      <w>mettre</w>
       <w>mockinbox</w>
       <w>n'exécutera</w>
       <w>objectif</w>
       <w>parfois</w>
       <w>partagé</w>
       <w>peut</w>
+      <w>plprb</w>
+      <w>posdeviceid</w>
+      <w>possessionuuid</w>
       <w>possède</w>
       <w>préférez</w>
       <w>prérequis</w>
@@ -109,6 +116,8 @@
       <w>videorecorder</w>
       <w>voucherdata</w>
       <w>vous</w>
+      <w>vrai</w>
+      <w>vérifié</w>
       <w>étape</w>
       <w>étendent</w>
       <w>évite</w>
