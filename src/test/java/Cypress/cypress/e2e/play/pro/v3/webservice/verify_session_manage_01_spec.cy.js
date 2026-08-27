@@ -32,7 +32,7 @@ describe("POS - Verify That Admin should close session of another user Manager f
                 .to.eq("Session POS fermée avec succès.");
             expect(response.body.data.action).to.eq("closed");
             // Session
-            expect(response.body.data.session_uuid).to.eq("eab5281d-479a-4fd8-99d3-7f8535a82eed");
+            expect(response.body.data.session_uuid).to.eq("d3a1dc20-2be9-44c8-91e3-f84731dc115d");
             // Refund
             //expect(response.body.data.total_fund).to.eq(116.07);
             //expect(response.body.data.cash_total).to.eq(116.07);
