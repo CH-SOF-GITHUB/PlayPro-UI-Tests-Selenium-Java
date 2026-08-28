@@ -1,3 +1,6 @@
+# Ignorer les secrets
+src/test/resources/.env
+
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/

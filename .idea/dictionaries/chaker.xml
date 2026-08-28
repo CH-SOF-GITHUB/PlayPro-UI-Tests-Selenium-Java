@@ -6,13 +6,17 @@
       <w>afin</w>
       <w>ajoutez</w>
       <w>apparaître</w>
+      <w>associe</w>
+      <w>asynchrone</w>
       <w>attribut</w>
       <w>autodownload</w>
       <w>automatisation</w>
       <w>automatiser</w>
       <w>autonome</w>
+      <w>autorise</w>
       <w>avancé</w>
       <w>aventures</w>
+      <w>bloqué</w>
       <w>bénéficier</w>
       <w>chevauchement</w>
       <w>cible</w>
@@ -25,10 +29,12 @@
       <w>cruciale</w>
       <w>créez</w>
       <w>d'auto</w>
+      <w>d'exposer</w>
       <w>d'exécutions</w>
       <w>d'interagir</w>
       <w>d'url</w>
       <w>d'échec</w>
+      <w>d'éviter</w>
       <w>dedans</w>
       <w>dehors</w>
       <w>demande</w>
@@ -42,6 +48,7 @@
       <w>découverte</w>
       <w>découvrir</w>
       <w>dépendance</w>
+      <w>déprécié</w>
       <w>désactivez</w>
       <w>développement</w>
       <w>d’une</w>
@@ -59,10 +66,15 @@
       <w>immersives</w>
       <w>interne</w>
       <w>intégré</w>
+      <w>isole</w>
       <w>jamais</w>
       <w>jsalerts</w>
       <w>jusqu</w>
+      <w>l'ancien</w>
+      <w>l'ancienne</w>
+      <w>l'appel</w>
       <w>l'avertissement</w>
+      <w>l'environnement</w>
       <w>l'espace</w>
       <w>l'héritage</w>
       <w>l'ide</w>
@@ -71,7 +83,9 @@
       <w>l'itération</w>
       <w>l'écran</w>
       <w>laisser</w>
+      <w>lorsque</w>
       <w>maintenant</w>
+      <w>manière</w>
       <w>masquage</w>
       <w>mesure</w>
       <w>mettre</w>
@@ -85,10 +99,12 @@
       <w>posdeviceid</w>
       <w>possessionuuid</w>
       <w>possède</w>
+      <w>probleme</w>
       <w>préférez</w>
       <w>prérequis</w>
       <w>qualité</w>
       <w>rapides</w>
+      <w>reconnu</w>
       <w>recouvre</w>
       <w>remonte</w>
       <w>remédier</w>
@@ -100,14 +116,20 @@
       <w>récupérer</w>
       <w>réserver</w>
       <w>s'exécute</w>
+      <w>saxwe</w>
       <w>signifie</w>
       <w>souhaite</w>
       <w>spécifiez</w>
       <w>stabilité</w>
       <w>supérieur</w>
+      <w>synchrone</w>
+      <w>syntaxe</w>
       <w>système</w>
+      <w>sécurisée</w>
+      <w>sécurité</w>
       <w>toastify</w>
       <w>traitée</w>
+      <w>transmet</w>
       <w>téléchargement</w>
       <w>télécharger</w>
       <w>utilisant</w>
