@@ -50,7 +50,7 @@ cypress-test-job:
     - echo "Début du test Cypress"
     # Exécution ciblée du test
     - cd src/test/java/Cypress
-    - npx cypress run --spec "cypress/e2e/play/pro/v3/webservice/verify_session_manage_01_spec.cy.js"
+    - npx cypress run --spec "cypress/e2e/play/pro/v3/webservice/add_to_basket_01_spec.cy.js"
 
   artifacts:
     when: always
