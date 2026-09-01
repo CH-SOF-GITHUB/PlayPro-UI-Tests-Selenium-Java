@@ -270,6 +270,21 @@
             <version>${aspectj.version}</version>
             <scope>provided</scope>
         </dependency>
+        <!-- Incorporating Self-Healing AI Frameworks -->
+        <!-- Source: https://mvnrepository.com/artifact/com.epam.healenium/healenium-web -->
+        <dependency>
+            <groupId>com.epam.healenium</groupId>
+            <artifactId>healenium-web</artifactId>
+            <version>3.6.0</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- Incorporating Self-Healing AI Frameworks -->
+        <!-- Install AI4Selenium Dependencies
+        <dependency>
+            <groupId>com.ai4s</groupId>
+            <artifactId>ai4selenium</artifactId>
+            <version>1.0.0</version>
+        </dependency> -->
     </dependencies>
     <profiles>
         <profile>
